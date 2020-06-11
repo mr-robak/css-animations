@@ -47,7 +47,7 @@ button.FullscreenMenuToggler {
 @keyframes slideInFromLeft {
   0% {
     opacity: 0;
-    transform: translate(-2.5rem, 0);
+    transform: translate(-10.5rem, 0);
   }
   100% {
     opacity: 1;
