@@ -15,6 +15,7 @@
     "parcel": "^2.0.0-alpha.3.2"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }

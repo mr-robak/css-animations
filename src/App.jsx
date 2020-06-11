@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import cx from "classnames";
+import FullscreenMenu from "./FullscreenMenu";
 
 export default function App() {
+  const [open, setOpen] = useState(false);
+
   return (
     <div>
-      <div className="searchbar">
-        <input placeholder="Search" />
+      <FullscreenMenu />
+      <div
+        className={cx("searchbar", {
+          "is-open": open,
+        })}
+      >
+        <input
+          placeholder="Search"
+          onFocus={(e) => setOpen(true)}
+          onBlur={(e) => setOpen(false)}
+        />
         <div className="dropdown_positioner">
           <div className="dropdown">
             <ul>
