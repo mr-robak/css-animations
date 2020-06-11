@@ -1,0 +1,17 @@
+{
+  "name": "css-transitions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf .cache .parcel-cache",
+    "start": "parcel serve src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.0.0-alpha.3.2"
+  }
+}
