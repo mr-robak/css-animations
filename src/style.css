@@ -1,0 +1,85 @@
+html,
+body {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+#app {
+  margin: 3rem;
+}
+
+.searchbar input {
+  border: 2px solid #eee;
+  background: #eee;
+  width: 10rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+
+  font-size: 20px;
+  font-weight: bold;
+  color: #777;
+
+  transition: all 0.4s ease-in;
+}
+
+.searchbar input::placeholder {
+  color: #ccc;
+}
+
+.searchbar input:focus {
+  outline: none;
+  width: 20rem;
+  height: 1.4em;
+  box-shadow: 5px 5px 0.5rem rgba(0, 0, 0, 0.15);
+
+  background: #fff;
+  border-color: #4971df;
+  border-radius: 5px;
+  color: #4971df;
+}
+
+.dropdown_positioner {
+  position: relative;
+}
+.dropdown {
+  position: absolute;
+  left: 2px;
+  top: 0.5rem;
+  width: 21rem;
+
+  background: white;
+  box-shadow: 1px 1px 0.5rem rgba(0, 0, 0, 0.15);
+  color: #777;
+  opacity: 0;
+
+  transition: all 0.3s ease;
+  transform-origin: top;
+  transform: perspective(400px) rotateX(-90deg);
+}
+.dropdown ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown li {
+  display: block;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.dropdown li:hover {
+  background: #eee;
+  color: #333;
+  cursor: pointer;
+}
+
+.dropdown strong {
+  color: #4971df;
+  text-decoration: underline;
+}
+
+.searchbar:focus-within .dropdown {
+  transform: perspective(400px) rotateX(0);
+  opacity: 1;
+}
